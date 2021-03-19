@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+    <h2>Advanced for/of JS</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        const magnolia = {
+            name: 'Magnolia',
+            description: 'Sweet heaven',
+            type: 'Dessert',
+            ingredients: ['milk', 'sugar', 'butter', 'flour', 'eggs'],
+            displayRecipe() {
+                let title = '<h3>' + magnolia.name + ' ' + magnolia.type + '</br></br>' + magnolia.description + '</h3>';
+                let text = '<h4> Here is the list of ingredients </h4>' +
+                    magnolia.ingredients.join('</br>');
+                document.getElementById('demo').innerHTML = title + text;
+            }
+
+        }
+        magnolia.displayRecipe();
+    </script>
+
+</body>
+
+</html>
