@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+    <h2>Advanced for/of JS</h2>
+
+
+    <p id="demo"></p>
+
+    <script>
+        let ingredients = [{
+            product: 'milk',
+            amount: '1 litre'
+        }, {
+            product: 'sugar',
+            amount: '1 cup'
+        }, {
+            product: 'butter',
+            amount: '50 gr'
+        }, {
+            product: 'flour',
+            amount: '4 cups'
+        }, {
+            product: 'eggs',
+            amount: '2 pcs'
+        }];
+
+        let recipe = ' ';
+
+        for (let product of ingredients) {
+            recipe += product.product + ': ' + product.amount + '</br>';
+
+        }
+        document.getElementById('demo').innerHTML = recipe;
+    </script>
+
+</body>
+
+</html>
