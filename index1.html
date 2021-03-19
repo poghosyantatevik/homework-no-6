@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript For/In Loop</h2>
+
+    <p>Definition and Usage The for/in statement loops through the properties of an object. The block of code inside the loop will be executed once for each property. </br>
+        Note: Do not use the for/in statement to loop through arrays where index order is important. Use the for statement instead.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const myCar = {
+            brand: 'Renault',
+            model: 'Megane',
+            year: 2017,
+            color: 'Royal Blue'
+        };
+
+
+        let text = '';
+
+        for (prop in myCar) {
+            text += myCar[prop] + ' ';
+
+        }
+        document.getElementById('demo').innerHTML = text;
+    </script>
+
+</body>
+
+</html>
