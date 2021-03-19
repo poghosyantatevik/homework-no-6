@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript For/Of Loop</h2>
+
+    <p>The for/of statement loops through the values of an iterable object.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let ingredients = ['milk', 'sugar', 'butter', 'flour', 'eggs'];
+
+        let recipe = ' ';
+
+        for (let product of ingredients) {
+            recipe += product + '</br>';
+
+        }
+        document.getElementById('demo').innerHTML = recipe;
+    </script>
+
+</body>
+
+</html>
